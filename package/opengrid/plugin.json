@@ -1,0 +1,118 @@
+{
+  "id": "opengrid",
+  "name": "openGrid",
+  "version": "0.1.0",
+  "description": "openGrid wall and desk boards on the 28 mm grid, Full or Lite, with screw holes and cut corners, as editable sketches and features.",
+  "capabilities": [
+    "commands@0.1"
+  ],
+  "runtime": {
+    "module": "plugin.wasm",
+    "entries": [
+      {
+        "name": "board",
+        "effect": "edit",
+        "input_schema": {
+          "type": "object",
+          "required": [
+            "width",
+            "height",
+            "board",
+            "screw_holes"
+          ],
+          "properties": {
+            "width": {
+              "type": "integer",
+              "title": "Width (tiles)",
+              "description": "Tiles across, 28 mm each. At most 100 tiles in one board",
+              "minimum": 1,
+              "maximum": 20,
+              "default": 4
+            },
+            "height": {
+              "type": "integer",
+              "title": "Height (tiles)",
+              "description": "Tiles up, 28 mm each",
+              "minimum": 1,
+              "maximum": 20,
+              "default": 4
+            },
+            "board": {
+              "type": "string",
+              "title": "Board",
+              "description": "Full: 6.8 mm, mounts with mounting snaps, takes every snap. Lite: 4 mm, flat back, screwed straight to the wall",
+              "enum": [
+                "Full",
+                "Lite"
+              ],
+              "default": "Full"
+            },
+            "screw_holes": {
+              "type": "string",
+              "title": "Screw holes",
+              "description": "Countersunk holes for 4 mm wood screws where the grid lines cross (not on the edges)",
+              "enum": [
+                "None",
+                "Every node",
+                "Every 2nd node",
+                "Every 3rd node"
+              ],
+              "default": "None"
+            },
+            "corner_chamfers": {
+              "type": "boolean",
+              "title": "Cut corners",
+              "description": "Cut the board's four outer corners off, as openGrid does",
+              "default": true
+            },
+            "position_x": {
+              "type": "number",
+              "title": "Position X",
+              "description": "Corner of the board",
+              "default": 0,
+              "unit": "mm"
+            },
+            "position_y": {
+              "type": "number",
+              "title": "Position Y",
+              "description": "Corner of the board",
+              "default": 0,
+              "unit": "mm"
+            },
+            "title": {
+              "type": "string",
+              "title": "Body name",
+              "description": "Leave empty for openGrid and the size",
+              "maxLength": 60
+            }
+          }
+        },
+        "slots": [
+          {
+            "kind": "menu",
+            "name": "openGrid board"
+          }
+        ]
+      }
+    ],
+    "commands": [
+      "sketch.create",
+      "sketch.line",
+      "sketch.finish",
+      "solid.box",
+      "solid.loft",
+      "solid.extrude",
+      "solid.cylinder",
+      "solid.cone",
+      "solid.pattern.rectangular",
+      "solid.combine",
+      "solid.remove",
+      "model.body_features"
+    ],
+    "limits": {
+      "fuel": 2000000000,
+      "memory_mib": 64,
+      "deadline_ms": 30000
+    }
+  }
+}

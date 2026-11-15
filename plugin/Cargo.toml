@@ -1,0 +1,19 @@
+[package]
+name = "opengrid"
+version = "0.1.0"
+edition = "2021"
+description = "openGrid boards for SolidCraft"
+license = "MIT"
+publish = false
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wit-bindgen = { version = "0.36", default-features = false, features = ["macros", "realloc"] }
+serde_json = "1"
+
+[profile.release]
+opt-level = "s"
+lto = true
+strip = true

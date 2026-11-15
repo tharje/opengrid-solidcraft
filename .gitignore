@@ -1,0 +1,5 @@
+# local working files
+NOTES.md
+out/
+plugin/target/
+package/*.zip

@@ -1,0 +1,8 @@
+plugin/wit/plugin.wit is the plugin interface (WIT package craft:plugin@0.1.0) published by
+SolidCraft, https://github.com/tangency-labs/solidcraft, under the Apache License 2.0. It is
+included unchanged so the plugin can be built.
+
+The board geometry follows openGrid by David D (https://www.printables.com/@DavidD), licensed
+under Creative Commons Attribution 4.0 (CC BY 4.0). Its dimensions were taken from the openGrid
+generator in openGrid-Studio (https://github.com/ClassicOldSong/openGrid-Studio, Apache License
+2.0). No code or model files from either are included.
