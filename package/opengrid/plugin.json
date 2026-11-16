@@ -1,7 +1,7 @@
 {
   "id": "opengrid",
   "name": "openGrid",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "openGrid wall and desk boards on the 28 mm grid, Full or Lite, with screw holes and cut corners, as editable sketches and features.",
   "capabilities": [
     "commands@0.1"

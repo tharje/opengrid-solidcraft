@@ -4,7 +4,8 @@ A [SolidCraft](https://github.com/tangency-labs/solidcraft) plugin that makes
 [openGrid](https://www.printables.com/model/1214361-opengrid-walldesk-mounting-framework-and-ecosystem) boards:
 the open wall and desk mounting system on a 28 mm grid. Choose the size, Full or Lite, and where the
 screw holes go, and it builds the board as ordinary SolidCraft features (sketches, lofts, patterns and
-combines) that you can edit like anything you drew yourself.
+combines) that you can edit like anything you drew yourself. They go in one folder in the History bar,
+named like the board.
 
 | A 4x4 Full board | A 5x3 Lite board with screw holes |
 |---|---|
@@ -26,15 +27,15 @@ combines) that you can edit like anything you drew yourself.
 The tile follows openGrid's dimensions: a 25 mm opening that widens to 26.4 mm inside, 45° chamfers
 at both faces and a corner block in each corner, so openGrid snaps and accessories fit.
 
-> Status: early (0.1.0), not printed yet: please report how snaps fit. Tested with SolidCraft 0.42.0
-> on Linux. On macOS, SolidCraft 0.41 and 0.42 crash when any plugin runs
-> ([SolidCraft issue #16698](https://github.com/tangency-labs/solidcraft/issues/16698)); that is a
-> SolidCraft bug and should be fixed there.
+> Status: early (0.2.0), not printed yet: please report how snaps fit. Tested with SolidCraft 0.42.0
+> and 0.43.0 on Linux. On macOS, use SolidCraft 0.43 or newer: 0.41 and 0.42 crash there when any
+> plugin runs ([SolidCraft issue #16698](https://github.com/tangency-labs/solidcraft/issues/16698),
+> fixed in 0.43).
 
 ## Install
-Download `opengrid-0.1.0.zip` from the [latest release](../../releases/latest), then in SolidCraft:
+Download `opengrid-0.2.0.zip` from the [latest release](../../releases/latest), then in SolidCraft:
 **Plugins › Install plugin…** and pick the zip. Run it from **Plugins › openGrid board** (or its
-button in the ribbon on 0.42).
+button in the ribbon).
 
 ## Big boards take time
 SolidCraft gives a plugin 30 seconds, and every change to a big body takes it a while. The plugin
