@@ -107,7 +107,8 @@
       "solid.pattern.rectangular",
       "solid.combine",
       "solid.remove",
-      "model.body_features"
+      "model.body_features",
+      "timeline.group"
     ],
     "limits": {
       "fuel": 2000000000,
