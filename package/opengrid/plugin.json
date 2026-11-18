@@ -85,12 +85,17 @@
               "description": "Leave empty for openGrid and the size",
               "maxLength": 60
             }
-          }
+          },
+          "x-solidcraft-icon": "i/board.svg"
         },
         "slots": [
           {
             "kind": "menu",
             "name": "openGrid board"
+          },
+          {
+            "kind": "ribbon",
+            "name": "Board"
           }
         ]
       }

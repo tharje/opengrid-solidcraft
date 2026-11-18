@@ -8,5 +8,5 @@ RUSTFLAGS="--remap-path-prefix=$HOME=~" ~/.cargo/bin/cargo build --release --tar
 cd ../package
 rm -f opengrid-*.zip
 VERSION=$(python3 -c "import json;print(json.load(open('opengrid/plugin.json'))['version'])")
-python3 -c "import zipfile; z=zipfile.ZipFile('opengrid-$VERSION.zip','w',zipfile.ZIP_DEFLATED); [z.write('opengrid/'+f) for f in ('plugin.json','plugin.wasm')]"
+python3 -c "import os, zipfile; z=zipfile.ZipFile('opengrid-$VERSION.zip','w',zipfile.ZIP_DEFLATED); [z.write('opengrid/'+f) for f in ['plugin.json','plugin.wasm']+sorted('i/'+i for i in os.listdir('opengrid/i'))]"
 echo "package/opengrid-$VERSION.zip"
