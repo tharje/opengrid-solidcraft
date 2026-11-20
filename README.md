@@ -83,6 +83,8 @@ From a script, inspect the package to get its approval hash, then run the `board
 Needs Rust with the `wasm32-unknown-unknown` target and `wasm-tools`. `./build.sh` runs the tests,
 builds the WebAssembly component and writes `package/opengrid-<version>.zip`.
 
+`package/opengrid/tests/` holds test cases for SolidCraft 0.45 and later. `solidcraft-cli plugin test package/opengrid` runs each one on the real host and checks the body count and volume. The tests are left out of the zip.
+
 ## Credits and licence
 openGrid is by [David D](https://www.printables.com/@DavidD), released under CC BY 4.0. The tile's
 dimensions here come from the openGrid generator in

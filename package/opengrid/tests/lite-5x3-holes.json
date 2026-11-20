@@ -1,0 +1,18 @@
+{
+  "entry": "board",
+  "params": {
+    "width": 5,
+    "height": 3,
+    "board": "Lite",
+    "screw_holes": "Every 2nd node"
+  },
+  "expect": {
+    "model": {
+      "body_count": 1,
+      "total": {
+        "volume_mm3": 10326.337
+      }
+    },
+    "tolerance": 0.0001
+  }
+}

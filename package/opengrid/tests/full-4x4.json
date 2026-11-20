@@ -1,0 +1,18 @@
+{
+  "entry": "board",
+  "params": {
+    "width": 4,
+    "height": 4,
+    "board": "Full",
+    "screw_holes": "None"
+  },
+  "expect": {
+    "model": {
+      "body_count": 1,
+      "total": {
+        "volume_mm3": 19331.783
+      }
+    },
+    "tolerance": 0.0001
+  }
+}
