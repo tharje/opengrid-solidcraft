@@ -27,13 +27,13 @@ named like the board.
 The tile follows openGrid's dimensions: a 25 mm opening that widens to 26.4 mm inside, 45° chamfers
 at both faces and a corner block in each corner, so openGrid snaps and accessories fit.
 
-> Status: early (0.3.0), not printed yet: please report how snaps fit. Tested with SolidCraft 0.43.0
-> and 0.44.1 on Linux. On macOS, use SolidCraft 0.43 or newer: 0.41 and 0.42 crash there when any
+> Status: early (0.3.1), not printed yet: please report how snaps fit. Tested with SolidCraft 0.43.0,
+> 0.44.1 and 0.45.0 on Linux. On macOS, use SolidCraft 0.43 or newer: 0.41 and 0.42 crash there when any
 > plugin runs ([SolidCraft issue #16698](https://github.com/tangency-labs/solidcraft/issues/16698),
 > fixed in 0.43).
 
 ## Install
-Download `opengrid-0.3.0.zip` from the [latest release](../../releases/latest), then in SolidCraft:
+Download `opengrid-0.3.1.zip` from the [latest release](../../releases/latest), then in SolidCraft:
 **Plugins › Install plugin…** and pick the zip. Run it from **Plugins › openGrid board**, or its
 **Board** button in the ribbon (with its own icon from SolidCraft 0.44).
 
